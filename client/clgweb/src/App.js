@@ -25,10 +25,10 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-         <Route path="/college" render={() =>(
+         <Route exact path="/college" render={() =>(
              <Colleges />
           )} />
-           <Route path="/students" render={() =>(
+           <Route path="/college/:id" render={() =>(
              <Students />
           )} />
       </Switch>
