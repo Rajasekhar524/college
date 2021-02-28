@@ -6,7 +6,7 @@ const collegeRoutes = require('./routes/collegeRoutes')
 const cors = require('cors')
 
 const app = express();
-PORT = process.env.PORT || 3000 ;
+ let PORT = process.env.PORT || 3000 ;
 //middleware
 app.use(express.static('public'));
 app.use(express.json());
