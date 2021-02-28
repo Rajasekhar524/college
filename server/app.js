@@ -6,7 +6,7 @@ const collegeRoutes = require('./routes/collegeRoutes')
 const cors = require('cors')
 
 const app = express();
-
+PORT = process.env.PORT || 3000 ;
 //middleware
 app.use(express.static('public'));
 app.use(express.json());
@@ -19,10 +19,10 @@ const dbURI = 'mongodb+srv://Raj:211221@cluster1.mg6wb.mongodb.net/node-auth?ret
 mongoose.connect(process.env.MONGODB_URI||dbURI,{useNewUrlParser:true,
                         useUnifiedTopology:true,
                         useCreateIndex:true })
-                        .then((result)=> app.listen(3000))
+                        .then((result)=> app.listen(PORT))
                         .catch((err)=>console.log(err));
 
-if(process.envNODE_ENV ==='production') {
+if(process.envNODE_ENV === 'production') {
     app.use(express.static('client/build'))
 }
 
