@@ -20,16 +20,15 @@ function Colleges() {
         {title:"Yearfounded", field: "Yearfounded"},
         {title:"Address", field:"Address",
         render:rowData => rowData.Address ? rowData.Address.join():'Empty'},
-        
         {title:"Country", field: "Country"},
         {title:"Courses", field: "Courses"} 
-        
       ] 
 
-    const handleClick=()=> {
+    const handleClick=(event,rowData)=> {
         
-        // console.log()
-        history.push(`/college/603a2bf92bf3c96a98942dda`);
+        console.log(event.id);
+      console.log(rowData)
+        // history.push(`/college/603a2bf92bf3c96a98942dda`);
         // history.push("/college")
       }
 
