@@ -26,9 +26,8 @@ function Colleges() {
 
     const handleClick=(event,rowData)=> {
         
-        console.log(event.id);
-      console.log(rowData)
-        // history.push(`/college/603a2bf92bf3c96a98942dda`);
+        
+        history.push(`/college/603a2bf92bf3c96a98942dda`);
         // history.push("/college")
       }
 
