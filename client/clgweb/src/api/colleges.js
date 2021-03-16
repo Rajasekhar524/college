@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'http://localhost:3000/college'
+const url = 'https://collegeslist.herokuapp.com/college'
 // const students = 'http://localhost:3000/students'
 
 export const fetchColleges = () => axios.get(url)
