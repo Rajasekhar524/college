@@ -28,7 +28,7 @@ if(process.envNODE_ENV === 'production') {
 
 
 
-app.get('/', (req,res) => res.render('Go to Colleges'))
+app.get('/', (req,res) => res.send('Go to Colleges'))
 app.use(authRoutes)
 app.use(studentRoutes)
 app.use(collegeRoutes)
