@@ -28,8 +28,7 @@ if(process.envNODE_ENV === 'production') {
 
 
 
-app.get('/', (req,res) => res.render('home'))
-app.get('/smooth',(req,res)=> res.render('smooth'));
+app.get('/', (req,res) => res.render('Go to Colleges'))
 app.use(authRoutes)
 app.use(studentRoutes)
 app.use(collegeRoutes)
