@@ -1,34 +1,34 @@
 const mongoose = require('mongoose')
 
 const collegeSchema = new mongoose.Schema({
-    ClgId:{
-        type: Number,
-        required:true,
-        unique:true
-    },
-    Name:{
-        type:String
+
+    CollegeName:{
+        type:String,
+        required:true
     },
     Yearfounded:{
         type:Number,
     },
-    City:{
-        type:String,
-        required:true
-
-    },
-    State:{
-        type: String,
-        required:true
-    },
+    Address:[],
     Country:{
         type: String,
         required:true
-    },  
-    Noofstudents:{
-        type:Number,
-        required:true
     },
+    Students:[{
+            ID:{
+                type:Number,
+                required:true
+            },
+            StudentName:{
+                type:String,
+                required:true
+            },
+            YearOfBatch:{
+                type:Number,
+                required:true
+            },
+            Skills:[]
+    }],
     Courses:{
         type: []
     }

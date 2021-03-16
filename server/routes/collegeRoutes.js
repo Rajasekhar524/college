@@ -5,7 +5,7 @@ const router = Router();
 
 router.get('/college', collegeControllers.college_get);
 router.post('/college', collegeControllers.college_post);
-// router.get('/login', authControllers.login_get);
-// router.post('/login', authControllers.login_post);
+router.get('/college/:id',collegeControllers.college_getOne);
+
 
 module.exports = router;

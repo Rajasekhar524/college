@@ -14,7 +14,7 @@ app.use(cors({ origin: true }));
 
 app.set('view engine','ejs')
 
-const dbURI = 'mongodb+srv://Raj:211221@cluster1.mg6wb.mongodb.net/node-auth?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://Raj:211221@cluster1.mg6wb.mongodb.net/nodeClg?retryWrites=true&w=majority'
 
 mongoose.connect(process.env.MONGODB_URI||dbURI,{useNewUrlParser:true,
                         useUnifiedTopology:true,
